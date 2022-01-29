@@ -17,7 +17,7 @@ public class Tests extends BaseSeleniumTest {
                 .goToCatalog()
                 .addToBasket()
                 .goToBasket()
-                .comparisonOfProducts();
+                .compareProducts();
 
         Assertions.assertEquals(basket.getExpectedArticle(), basket.getArticleInBasket(),
                 "Артикул добавленого товара и товара в корзине отличается");

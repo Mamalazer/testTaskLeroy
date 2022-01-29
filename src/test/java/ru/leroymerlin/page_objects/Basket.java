@@ -22,7 +22,7 @@ public class Basket extends BaseSeleniumPage {
         return articleInBasket;
     }
 
-    public Basket comparisonOfProducts() {
+    public Basket compareProducts() {
 
         articleInBasket = shadow.findElementByXPath(articleXPath).getText();
 
