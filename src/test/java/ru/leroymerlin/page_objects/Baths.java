@@ -11,13 +11,13 @@ import java.util.List;
 public class Baths extends BaseSeleniumPage {
 
     @FindBy(xpath = "//div[@class='phytpj4_plp largeCard']")
-    List<WebElement> productCards;
+    private List<WebElement> productCards;
 
     @FindBy(xpath = "//a[@data-testid='button' and contains(@href, 'basket')]")
-    WebElement basketButton;
+    private WebElement basketButton;
 
-    By addToBasketButton = By.xpath(".//button[@data-qa='product-cart-button']");
-    By article = By.xpath(".//span[contains(text(), 'Арт')]");
+    private By addToBasketButton = By.xpath(".//button[@data-qa='product-cart-button']");
+    private By article = By.xpath(".//span[contains(text(), 'Арт')]");
 
     String articleText;
 

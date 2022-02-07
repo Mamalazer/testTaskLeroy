@@ -20,7 +20,7 @@ public class MainPage extends BaseSeleniumPage {
         shadow.findElementByXPath(catalogButtonXpath).click();
 
         shadow.findElementsByXPath(catalogElementsXPath)
-                .get(2)
+                .get(3)
                 .click();
 
         shadow.findElementsByXPath(catalogElementsXPath)
